@@ -1,6 +1,17 @@
 import os
 from colorama import Fore, Style, init
 import time 
+from classen.player import Player
+
+leo = Player(
+    name ="leo",
+    hp = 100,
+    power = 50,
+    mood = 100
+)
+
+def main():
+    print(leo.name)
 
 base_collor = Fore.LIGHTGREEN_EX
 
