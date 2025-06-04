@@ -19,7 +19,7 @@ class Player:
             raise ValueError("Mood kann nicht negativ sein")
     
     def eat_feces(self):
-        print("You just ate shit.")
+        print("You just ate feces.")
         self.hp += 25
         self.power += 2
         self.mood -= 95
