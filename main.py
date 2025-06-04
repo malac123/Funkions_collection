@@ -1,5 +1,8 @@
 import os
 from colorama import Fore, Style, init
+import time 
+
+base_collor = Fore.LIGHTGREEN_EX
 
 
 def input_menu(menu_items: list) -> int:
@@ -10,7 +13,6 @@ def input_menu(menu_items: list) -> int:
     this method creates a Menu from wich the player chooses one option 
     1.Attac 
     2.Use Items
-
     Using the Num pad the user Inputs a nuber wich gets returnd
     This Int can be uese to trigger ifttt commands
 
