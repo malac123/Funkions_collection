@@ -3,17 +3,23 @@ from colorama import Fore, Style, init
 import time 
 from classen.player import Player
 
-leo = Player(
-    name ="leo",
+base_collor = Fore.LIGHTGREEN_EX
+
+koker = Player(
+    name ="koker",
     hp = 100,
     power = 50,
     mood = 100
 )
 
 def main():
-    print(leo.name)
+    p(f"name: {koker.name}, mood: {koker.mood}, power: {koker.power}, hp: {koker.hp}")
+    
 
-base_collor = Fore.LIGHTGREEN_EX
+
+
+
+
 
 
 def input_menu(menu_items: list) -> int:
@@ -121,3 +127,5 @@ def p(text):
     print(f"│ {base_collor}{text}{Fore.WHITE} │")
     print("└" + "─" * sichtbare_laenge + "┘")
     wait()
+
+main()

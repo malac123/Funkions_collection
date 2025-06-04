@@ -18,12 +18,3 @@ class Player:
         self.power += 2
         self.__mood -= 95
         print(f"mood: {self.mood}, power: {self.power}, hp:{self.hp}.")
-
-leo = Player(
-    name ="leo",
-    hp = 100,
-    power = 50,
-    mood = 100
-)
-
-print(leo.hp , leo.power , leo.mood)
