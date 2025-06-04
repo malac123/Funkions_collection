@@ -11,10 +11,18 @@ class Player:
     @property
     def mood(self):
         return self.__mood
+    @mood.setter
+    def mood(self, new_mood):
+        if new_mood > 0:
+            self.__mood = new_mood
+        else:
+            raise ValueError("Mood kann nicht negativ sein")
     
-    def eat_shit(self):
+    def eat_feces(self):
         print("You just ate shit.")
         self.hp += 25
         self.power += 2
-        self.__mood -= 95
+        self.mood -= 95
         print(f"mood: {self.mood}, power: {self.power}, hp:{self.hp}.")
+        
+

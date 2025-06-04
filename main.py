@@ -14,7 +14,13 @@ koker = Player(
 
 def main():
     p(f"name: {koker.name}, mood: {koker.mood}, power: {koker.power}, hp: {koker.hp}")
-    
+    koker.mood = 20
+    p(f"{koker.name}'s new mood: {koker.mood}")
+    koker.mood = 200
+    p(f"{koker.name}'s new mood: {koker.mood}")
+    koker.eat_feces()
+    time.sleep(5)
+    p(f"{koker.name}'s new mood: {koker.mood}")
 
 
 
